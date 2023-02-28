@@ -2,6 +2,7 @@ from addition import addition
 from division import div
 from multiply import mult
 from subtraction import subtract
+from mod import mod
 
 a = int(input("Enter num 1 = "))
 b = int(input("Enter num 2 = "))
@@ -11,3 +12,4 @@ if(op == '+'): print("\nOutput = ",addition(a,b))
 elif(op == '-'): print("\nOutput = ",subtract(a,b))
 elif(op == '*'): print("\nOutput = ",mult(a,b))
 elif(op == '/'): print("\nOutput = ",div(a,b))
+elif(op == "%"): print("\nOutput = ",mod(a,b))
