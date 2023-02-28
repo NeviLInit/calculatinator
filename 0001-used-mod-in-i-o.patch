@@ -1,0 +1,33 @@
+From 9c5c75b21481661d348a38e63a957150c18389b9 Mon Sep 17 00:00:00 2001
+From: Nehel Khanna <nehel.khanna20@st.niituniversity.in>
+Date: Tue, 28 Feb 2023 19:11:00 +0530
+Subject: [PATCH] used mod in i/o
+
+---
+ input-output.py | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/input-output.py b/input-output.py
+index 4a36887..7648277 100644
+--- a/input-output.py
++++ b/input-output.py
+@@ -2,6 +2,7 @@ from addition import addition
+ from division import div
+ from multiply import mult
+ from subtraction import subtract
++from mod import mod
+ 
+ a = int(input("Enter num 1 = "))
+ b = int(input("Enter num 2 = "))
+@@ -10,4 +11,5 @@ op = input("Enter operation as symbol = ")
+ if(op == '+'): print("\nOutput = ",addition(a,b))
+ elif(op == '-'): print("\nOutput = ",subtract(a,b))
+ elif(op == '*'): print("\nOutput = ",mult(a,b))
+-elif(op == '/'): print("\nOutput = ",div(a,b))
+\ No newline at end of file
++elif(op == '/'): print("\nOutput = ",div(a,b))
++elif(op == "%"): print("\nOutput = ",mod(a,b))
+\ No newline at end of file
+-- 
+2.32.0 (Apple Git-132)
+
