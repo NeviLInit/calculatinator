@@ -5,7 +5,7 @@ from subtraction import subtract
 from mod import mod
 from percent import percent
 from log import lo
-
+from sqrt import sq
 
 a = int(input("Enter num 1 = "))
 b = int(input("Enter num 2 = "))
@@ -18,3 +18,4 @@ elif(op == '/'): print("\nOutput = ",div(a,b))
 elif(op == "%"): print("\nOutput = ",mod(a,b))
 elif(op == "p"): print("\nOutput = ",percent(a,b))
 elif(op == "l"): print("\nOutput = ",lo(a))
+elif(op == "sq"): print("\nOutput = ",sq(a))
